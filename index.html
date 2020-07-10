@@ -20,9 +20,10 @@
             <img src="./images/logo.svg" alt="">
           </div>
           <div class="buttons">
-            <a href=""><img src="./images/icon-document.svg" alt=""></a>
-            <a href=""><img src="./images/icon-folder.svg" alt=""></a>
-            <a href=""><img src="./images/icon-upload.svg" alt=""></a>
+            <label for="uploads"><img src="./images/icon-document.svg" alt=""></label>
+            <label for="uploads"><img src="./images/icon-folder.svg" alt=""></label>
+            <label for="uploads"><img src="./images/icon-upload.svg" alt=""></label>
+            <input type="file" name="arquivo" id="uploads">
           </div>
         </div>
         <div class="column-2">
@@ -33,12 +34,10 @@
               <span class="label-speech">GB Left</span>
             </p>
           </div>
-          <div class="progress-bar">
-            <div class="my-progress"></div>
-          </div>
+          <progress max="" value=""></progress>
           <div class="progress-status">
             <span>0 GB</span>
-            <span>1000 GB</span>
+            <span class="my-total-progress"></span>
           </div>
         </div>
       </div>
@@ -48,5 +47,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/arthurstofeles" target="_blank">Arthur Stofeles</a>.
   </div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
